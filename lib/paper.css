@@ -202,15 +202,15 @@ h1 {
 }
 h2 {
 	font-size: 24px;
-	margin: 30px 0 6px 0;
+	margin: 32px 0 6px 0;
 }
 h3 {
 	font-size: 22px;
-	margin: 18px 0 6px 0;
+	margin: 24px 0 0 0;
 }
 h4 {
-	margin: 15px 0 3px 0;
-    font-size: 18px;
+	margin: 16px 0 3px 0;
+    font-size: inherit;
 }
 h5 {
 }
@@ -218,7 +218,7 @@ h5 {
 table,
 figure,
 ul {
-    margin: 18px 0;
+    margin: 16px 0;
 }
 table {
     margin-left : 32px;
@@ -243,6 +243,21 @@ td.row-header {
     width: 100%;
 }
 
+blockquote,
+ul,
+ol,
+li,
+p {
+    font-family: Segoe UI, Segoe WP, Helvetica Neue, Roboto, sans-serif;
+	font-weight: 400;
+    line-height: 28px;
+	text-align: justify;
+}
+p {
+	font-size: inherit;
+    margin: 6px 0;
+}
+
 ul,
 ul.mark,
 ul.no-mark ul.mark,
@@ -254,7 +269,7 @@ ol.no-mark ol.mark {
 ul,
 ul.mark,
 ul.no-mark ul.mark {
-    list-style: lower-greek;
+    list-style: "–   ";
 }
 ul.no-mark,
 ul.no-mark ul,
@@ -263,26 +278,41 @@ ol.no-mark ol {
     list-style: none;
     padding-left: 32px;
 }
+li {
+    /* margin-bottom: 8px; */
+    line-height: 24px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: start;
+}
 
 li ul,
 li ol {
     margin-top: 0;
 }
 
-blockquote,
-ul,
-ol,
-li,
-p {
-    font-family: Segoe UI, Segoe WP, Helvetica Neue, Roboto, sans-serif;
-	font-weight: 400;
-    line-height: 21px;
-	text-align : justify;
+li > ul,
+li > ol {
+    padding-left: 32px;
+    margin-bottom: 0;
 }
-p {
-	font-size  : inherit;
-    margin: 6px 0;
+
+.dice ul {
+    list-style: none;
 }
+.dice li {
+    padding-left: 72px;
+    text-indent: -72px;
+    margin: 8px 0;
+}
+.note {
+    background: #fff1b7;
+    padding: 10px 24px 12px;
+    border-radius: 4px;
+    margin: 16px 0;
+    font-style: italic;
+}
+
 blockquote:before,
 blockquote:after {
     content: '"';
@@ -368,7 +398,7 @@ body.academic .todo,
         text-shadow: none !important;
     }
     h1, h2, h3, h4, h5 {
-        font-weight: 200 !important;
+        font-weight: 600 !important;
     }
     p {
         font-weight: 300 !important;
@@ -607,7 +637,7 @@ body.academic h3 {
 }
 body.academic h4,
 body.academic h5 {
-    font-weight: 300;
+    font-weight: 600;
 }
 	body.academic header > h2 {
 		font-size: 21px;
