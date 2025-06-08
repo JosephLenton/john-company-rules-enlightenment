@@ -192,9 +192,6 @@ body {
 h1, h2, h3, h4, h5 {
 	text-shadow: 1px 1px 1px transparent;
 }
-h1, h2, h3 {
-	text-transform: lowercase;
-}
 h1 {
 	font-size: 36px;
 	margin: 0 auto;
@@ -206,7 +203,7 @@ h2 {
 }
 h3 {
 	font-size: 22px;
-	margin: 24px 0 0 0;
+	margin: 24px 0 8px 0;
 }
 h4 {
 	margin: 16px 0 3px 0;
@@ -618,11 +615,6 @@ body.academic li {
     font-size: 18px;
 }
 
-body.academic h1,
-body.academic h2,
-body.academic h3 {
-	text-transform: capitalize;
-}
 body.academic h1 {
     font-size: 28px;
     font-weight: 300;
