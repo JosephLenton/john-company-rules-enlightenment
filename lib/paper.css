@@ -263,6 +263,24 @@ ol.mark,
 ol.no-mark ol.mark {
     padding: 0 18px 0 48px;
 }
+ol {
+    counter-set: count 0;
+}
+.counter-wrap > ol {
+    counter-set: inherit;
+}
+ol > li {
+    counter-increment: count;
+    list-style: none;
+}
+ol > li:before {
+    display: inline-block;
+    width: 32px;
+    margin-left: -32px;
+    text-align: end;
+    white-space: pre;
+    content: counter(count) ".   ";
+}
 ul,
 ul.mark,
 ul.no-mark ul.mark {
