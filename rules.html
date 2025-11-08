@@ -66,6 +66,7 @@ First there are phases for the players to improve their own position:
 
 Next are the phases for running the John Company:
 
+<div class="counter-wrap" style="counter-set: count 4">
  5. *Hiring* -- Player family members may be hired into any vacant Offices that are currently available.
  6. *Chairman* -- The Chairman of the company takes the company balance, and deals it out to each office in the company.
  7. *Directory of Trade* -- this position may open trade routes in India, for later offices to make trades.
@@ -78,21 +79,29 @@ Next are the phases for running the John Company:
  11. *Presidency of Madras* -- the same as the Presidency of Bombay, but based out of Madras (in the bottom right of India).
  12. *Presidency of Bengal* -- also the same as the Presidency of Bombay and Madras, but based out of Bengal (in the top right of India).
  13. *Superintendent of Trade China** -- an optional extension created by the Directory of Trade, or when passing the law Envoy to China. This office may trade opium with China.
+</div>
 
 Next are phases for financial changes:
 
+<div class="counter-wrap" style="counter-set: count 13">
  14. *Bonuses* -- players recieve money from their Enterprises (Workshops and Shipyards).
- 15.a. *Player Firm Revenue* (optional extension) -- any player Firms pay their upkeep, may go bankrupt, and may pay out dividends.
- 15.b. *Revenue* -- The John Company pays it's upkeep, may issue dividends, and update company standing (how well it is performing commercially).
+ 15. *Revenue* -- Company upkeep and profits
+   - *Player Firms* (optional extension) -- any player Firms pay their upkeep, may go bankrupt, and may pay out dividends.
+   - *John Company* -- The John Company pays it's upkeep, may issue dividends, and update company standing (how well it is performing commercially).
+</div>
 
 Then two phases for external effects taking place:
 
+<div class="counter-wrap" style="counter-set: count 15">
  16. *Events in India* -- Events take place in India that are out of the companies control. This includes storms that destroy ships, uprising, and invasions. This is what the elephant marching around the board is about.
  17. *Parliament Meets* -- New laws can be passed (or fail) which will affect the players, the John Company, and India.
+</div>
 
 Finally:
 
+<div class="counter-wrap" style="counter-set: count 17">
  18. *Upkeep & Refresh* -- Players pay their family costs (such as for people they are have retired), and you refresh the board for the next round.
+</div>
 
 The game can end with:
 
@@ -241,9 +250,10 @@ The rules are:
  - When they purchase a ship, they may place it in any of the seas (including China).
 
 The ships that can be bought are:
- - £2 - A Leased Ship - This is a temporary ship that is returned at the end of the round.
- - £3 - A Fitted Ship - Purchase a Fitted Ship from a players Shipyard.
- - £5 - A Company Ship - Purchase a red Company Ship. You can only do this if there are no Fitted Ships available.
+
+ - £2 - A Leased Ship (black) - This is a temporary ship that is returned at the end of the round.
+ - £3 - A Fitted Ship (blue) - Purchase a Fitted Ship from a players Shipyard.
+ - £5 - A Company Ship (red) - Purchase a red Company Ship. You can only do this if there are no Fitted Ships available.
 
 ## 9. *Military Affairs*
 
@@ -280,7 +290,7 @@ The office may attempt a trade with China. If chose to then:
 
 All players take £1 for each Shipyard with a fitted ship on the board, and £1 for each Workshop.
 
-## 15.a. Firm Revenue (optional expansion)
+## 15.a. Revenue for Player Firms (optional expansion)
 
 <div class="note">
    If there are no player Firms, then skip this section and go to the next Revenue phase.
@@ -363,7 +373,7 @@ A firm must dissolve if it cannot pay it's expenses. There are two ways out of t
  - Flip the Firm board back over the Family board.
  - _Note: if any Workshops were flipped to invest in the firm, do not flip them back. They remain in their invested state for the rest of the game!_
 
-## 15.b. *Revenue* (for the John Company)
+### 15 *Revenue* for the John Company
 
 First the company needs to pay for upkeep. All costs come out of the Company Balance track. These costs are:
 
@@ -403,19 +413,120 @@ The *Chairman* may choose to pay out one or many rounds of dividends, or none at
 ## 16. *Events in India*
 
 ### Rolling
+The events in India works first with a dice roll. The result has you check for storms damaging ships, and then run through a certain number of India cards.
 
- - Roll the Events in India die (the big blue die).
- - TODO, the rest
+ - Roll the Events in India die (it's the big blue die).
+
+Dice results:
+
+<div class="dice">
+ - 1️⃣ with 3x storms &nbsp;&nbsp;&nbsp; Roll storms for all ships in all seas (including in China), and take 1 event in India card.
+ - 2️⃣ with W storm &nbsp;&nbsp;&nbsp; Roll storms for all ships in the West sea, and take 2 event in India cards.
+ - 2️⃣ with E storm &nbsp;&nbsp;&nbsp; Roll storms for all ships in the East sea (and in China), and take 2 event in India cards.
+ - 3️⃣ with S storm &nbsp;&nbsp;&nbsp; Roll storms for all ships in the South sea, and take 3 event in India cards.
+ - 4️⃣ &nbsp;&nbsp;&nbsp; Take 4 event in India cards (there were no storms).
+</div>
 
 ### Storms
 
- - Each ship in that region.
-   - China counts as being a part of the East India sea.
- - Each Firm ship who made a trade in that region during this round.
- - TODO, the rest
+When a storm occurs, all ships in a region need to be checked if they have been damaged or destroyed. This is done by:
+
+ - For each ship in that region ... (China is included as a part of the East India sea),
+ - roll 1d6 for each *fitted* ship (the blue ones), and check the results below.
+
+<div class="dice">
+ -  1️⃣ or 2️⃣ &nbsp;&nbsp;&nbsp; Nothing happens (the ships is safe).
+ -  3️⃣ or 4️⃣ &nbsp;&nbsp;&nbsp; If the ship is healthy, flip it to be damaged. If it's already damaged, return it to it's shipyard (it was destroyed).
+ -  5️⃣ or 6️⃣ &nbsp;&nbsp;&nbsp; Return it to it's shipyard (it was destroyed).
+ - &nbsp;Ships are returned in their *healthy* (blue) state.
+</div>
 
 ### Events
-TODO (oh god0.
+
+<div class="note">
+   This part of the game is, by far, the most confusing and complicated.
+   Don't be surprised if it takes a while to get through this the first few times.
+</div>
+
+ - For each Event in India card you rolled on the big blue die, take and read a card from the India cards pile.
+ - You resolve the cards taken *one at a time*, until all cards are resolved.
+ - For each Event type, do one of the following.
+
+#### Windfall
+
+ - Look at the region name on the card face down at the top of the India draw deck,
+ - Players receive £1 from the bank for each Writer they have in that region,
+ - and players receive £1 from the bank for each Writer they have in an adjacent region.
+ - Then discard this card.
+
+#### Shuffle
+
+ - Perform the Elephant's March! (see below).
+ - Then shuffle this Shuffle card, back into the remaining India draw deck.
+ - Then shuffle the discarded India cards, and place them back on top of the India draw deck.
+
+#### Turmoil
+
+ - Look at the region name on the card face down at the top of the India draw deck.
+ - Look for the northernmost order in the region (from the top of the draw stack), that is still open or filled,
+   - Change that order to be closed.
+   - If the order was filled with a Writer placed on top, return the writer to it's owners supply, and change this to a regular closed order token.
+ - If all orders in the region are already closed, perform a cascade! (see below).
+
+#### Leader
+
+ - Look at the region name on the card face down at the top of the India draw deck.
+ - If that region is soverign (no flag, or it has a big flag), then add an extra level to it's tower (you are done).
+ - If the region is dominated, then rebel:
+   - Add up the towers of the current rebelling region, plus the modifier on the card.
+   - Add up the towers of the parent Empire (all it's regions excluding the current region).
+   - If the rebellion value is higher, then remove the flag from this region.
+   - If the rebellion value is less or equal, then remove a tower from the Capital (if there is one).
+ - Otherwise if the region is owned by the company:
+   - Add up the number of unrest cubes in the rebelliong region (if any), plus the modifier on the card.
+   - The company army for that region, *must* exhaust troops up to the strength of the rebellion, or as many as possible. Whichever is lower.
+   - If the company strength is equal or greter than the rebellion, then the rebellion ends.
+      - Remove all unrest cubes from this region.
+      - Move the army regiment tokens used to the exhaust side of the army box (they cannot be used again this turn).
+      - Re-run this process for *all company regions with unrest cubes*, but without the modifier from the card.
+      - TODO, the rest of this!
+   - If the Elephant was standing in the middle of this region, then perform an Elephant's move!
+
+#### Peace -- todo
+#### Crisis -- todo
+#### Foreign Invasion -- todo
+
+#### Elephant's March (from multiple cards)
+
+This happens on multiple cards. The Elephant is marching around India, and it represents who is attacking who during rebellions and such.
+
+When it comes up first:
+
+ - Look at the region name on the top face down card on the India draw deck. The elephant moves to there.
+
+Then check each of the following in order, and perform the first action that applies:
+
+ - If the region is owned by the John Company, move the elephant into the middle of that region.
+ - If the region is dominated by an empire (it has a little flag), then place the Elephant on the border facing it's soverign (it has a big flag).
+ - If the region is the centre of an Empire (it has a big flag), and has conquered all it's surrounding regions (they all have a little matching flag), then:
+   - Look for the shape on the inside border of the region that matches the India card you have (it's a triangle, circe, or square).
+   - Place the Elephant on the border there.
+   - The Elephant must face *into* the centre of the Empire (towards the big flag).
+ - Finally look for the shape on the inside border of the region that matches the India card you have (it's a triangle, circe, or square).
+   - If the other side has not been conquered by the current region, place the Elephant onto the border there. It is facing into the unconquered region.
+   - Otherwise move the Elephant clockwise along the borders, until you find an unconquered region. It sits on the border there.
+
+#### Cascade (from multiple cards)
+
+When you are asked to close an order in a region, sometimes the orders are all closed already. That causes a cascade.
+
+In that case:
+
+ - Close all orders in the neighbouring regions, which are open or filled, and connect to this regions.
+   - If the connected order was already filled, pick the northernmost open or filled order.
+      - If all orders are filled, perform the cascade again in that region!
+      - Each region can only cascade once.
+   - If an order was filled with a Writer placed on top, return the writer to it's owners supply, and change this to a regular closed order token.
 
 ## 17. *Parliament Meets*
 
@@ -476,3 +587,6 @@ In this end you must:
  - Officers -- Family members in the military who are located in an army in India (the middle army boxes on the board).
  - Player Family -- That's you, the player. You are playing as a family. It will be white, green, purple, blue, pink, or yellow.
  - Prizes -- This is where players can pay family members go to retire (the Manor boxes on the left side of the board).
+ - Soverign region -- TODO
+ - Company region -- TODO
+ - Dominated region -- TODO
